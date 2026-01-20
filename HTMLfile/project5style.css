@@ -1,0 +1,128 @@
+/* ===== BODY BACKGROUND ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ea74b7, #cbe678, #f76bf7);
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(to right, #d75b9d, #5aa0d6);
+  color: #8b43e2;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 8px;
+  margin: auto 300px;
+  font-size: 30px;
+  color: rgb(13, 13, 13);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* ===== NAVIGATION BAR (ONE BOX) ===== */
+nav {
+  background-color: #a5f593;
+  border-radius: 20px;
+  margin: auto 500px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0e0e0f;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #f1c40f;
+}
+
+/* ===== MAIN SECTION ===== */
+section {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* ===== BACK SIDE BOX / CARD ===== */
+.content-box {
+  background-color: rgb(111, 240, 133);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.content-box h3 {
+  margin-top: 0;
+  color: #3e2eeb;
+  border-bottom: 2px solid #0f0f0f;
+  padding-bottom: 8px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background-color: #49dc64;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+button a {
+  color: rgb(80, 250, 162);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #b83280;
+  color: rgb(74, 214, 118);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.social-icons h5 {
+  margin: auto 800px;
+  font-size: 16px;
+  color: #2c3e50;
+  margin-right: 100px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  margin: auto 800px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.social-icons p {
+  margin: auto 800px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}

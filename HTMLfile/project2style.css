@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgb(161, 231, 137),
+    rgb(121, 156, 231),
+    rgb(230, 115, 218),
+    rgb(121, 239, 239),
+    rgb(242, 79, 166)
+  );
+}
+h1 {
+  background-color: #adf7a2;
+  color: rgb(18, 17, 18);
+  margin: auto 350px;
+  text-align: center;
+  padding: 18px;
+}
+form {
+  margin: 100px auto 500px;
+  padding: 20px;
+  width: 900px;
+  background-color: white;
+}
+fieldset {
+  color: black;
+}
+legend {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+table {
+  height: 200px;
+}
+
+button,
+td,
+input {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

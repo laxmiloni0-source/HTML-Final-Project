@@ -1,0 +1,88 @@
+body {
+  background-image: url(./assets/Loction/Cosmic\ gradient\ with\ sparkling\ stars.png);
+  background-size: cover; /* IMPORTANT */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #6ea15f, #5b8e4e);
+  padding: 18px;
+  border-radius: 20px;
+  margin: 40px auto 40px;
+  width: 60%;
+  font-size: 50px;
+}
+.audio-box {
+  width: 65%;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.audio-box h2 {
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px auto 20px;
+  width: 60%;
+  color: #1e3c72;
+  font-size: 40px;
+}
+.song {
+  margin-bottom: 23px;
+  background-color: rgb(10, 10, 10);
+  margin: auto 20px;
+}
+.audio-box h3 {
+  width: 60%;
+  margin: auto 10px;
+  color: #333;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 10px;
+}
+.song audio {
+  width: 300px;
+  margin: auto 30px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #5586e8, #e84edb);
+  padding: 18px;
+  border-radius: 12px;
+  margin: 40px auto 40px;
+  width: 60%;
+  font-size: 30px;
+}
+.image-box {
+  width: 65%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 800px;
+}
+.image-box image {
+  display: inline-block;
+  margin: auto 400px;
+  margin-right: 5px;
+}
+
+.image-box video {
+  display: inline-block;
+  margin: auto 230px;
+  margin-left: 0;
+}
+.image-box p {
+  background: rgba(152, 230, 250, 0.85); /* glass effect */
+  color: #333;
+  padding: 30px 30px;
+  margin: 20px auto 450px;
+  border-radius: 20px;
+  font-size: 20px;
+}

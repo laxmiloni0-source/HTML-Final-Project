@@ -1,20 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="project4style.css" />
   </head>
+
   <body>
-    <h2>Login Form</h2>
-    <form style="color: rgb(219, 23, 213)">
-      <label for="">Name</label><br />
-      <input type="text" " /><br />
-      <label for="">Email</label><br />
-      <input type="email" /><br />
-      <label for="">Password</label><br />
-      <input type="Password" /><br />
-      <button type="submit" style="color: blueviolet">Submit</button>
+    <h1>Login Page</h1>
+
+    <form>
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" id="name" name="name" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
     </form>
   </body>
 </html>
