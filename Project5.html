@@ -3,78 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Laxmi Loni | Portfolio</title>
     <link rel="stylesheet" href="./project5style.css" />
   </head>
   <body>
-    <header>
-      <h1>Laxmi-Full Stack Developer</h1>
-      <p>
-        <strong>Laxmi S Loni</strong>, a Bachelor of Computer Applications (BCA)
-        student passionate about software development and web technologies.
-      </p>
-      <nav>
-        <ul>
-          <li><a href="#ab">About Me</a></li>
-          <li><a href="#ac">Skills</a></li>
-          <li><a href="#ad">Projects</a></li>
-          <li><a href="#ae">Contact</a></li>
-          <li>
-            <a download href="./assets/Laxmi S Loni.pdf" target="_blank"
-              >Download Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="content-box" id="ab">
-        <h3>About Me</h3>
-        <p>
-          I am a passionate Full Stack Developer with expertise in both frontend
-          and backend technologies.
-        </p>
-        <a href="https://github.com/laxmiloni0-source" target="_blank">
-          Visit my GitHub
-        </a>
+    <!-- HOME -->
+    <header class="home">
+      <h1>Laxmi Loni</h1>
+      <h2>Full Stack Developer | Web Developer</h2>
+      <p>I build clean and responsive websites.</p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="./assets/Laxmi S Loni.pdf" class="btn outline" download
+          >Download Resume</a
+        >
       </div>
 
-      <div class="content-box" id="ac">
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Core Java, JDBC, JEE, Spring, Hibernate</li>
-          <li>MySQL</li>
-        </ul>
-      </div>
+    <div class="intro">
+  <div class="intro-photo">
+    <img src="./assets/Laxmiphoto.jpg" alt="Laxmi Loni">
+  </div>
 
-      <div class="content-box" id="ad">
-        <h3>Projects</h3>
-        <ul>
-          <li><a href="Project1.html" target="_blank">Multimedia Blog</a></li>
-          <li><a href="">Poll-Pulse</a></li>
-        </ul>
-      </div>
-
-      <div class="content-box" id="ae">
-        <h3>Contact</h3>
-        <p>
-          Email: <a href="mailto:laxmiloni0@gmail.com">laxmiloni0@gmail.com</a>
-        </p>
-        <p>Phone: <a href="tel:+919148329725">+91 9148329725</a></p>
+  <div class="intro-about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate frontend developer with a strong interest in
+      <b>HTML, CSS, and JavaScript</b>.
+      I enjoy creating responsive and user-friendly websites.
+    </p>
+  </div>
+</div>
+    <!-- SKILLS -->
+    <section class="section">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <img src="./assets/image/java.png" width="100" />
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <img src="./assets/image/mysql.png" width="100" />
+          <p>MySQL</p>
+        </div>
+        <div class="skill">
+          <img src="./assets/image/html.png" width="100" />
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <img src="./assets/image/css.png" width="100" />
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <img src="./assets/image/js.png" width="100" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="./assets/image/python.jpg" width="100" />
+          <p>Python</p>
+        </div>
       </div>
     </section>
-    <div class="social-icons">
-      <h5>Connect with me via:</h5>
-      <a href="" target="_blank">
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/174/174857.png"
-          alt="LinkedIn"
-          height="80"
-          width="80"
-        />
-        <p>Laxmi-loni</p>
-      </a>
-    </div>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <div class="card">
+          <h3>Multimedia Project</h3>
+          <div class="img"><img src="./assets/image/multi.png" alt="" ></div>
+          <div class="pargrap">
+          <p>A responsive multimedia project built using HTML and CSS.</p>
+          <p><b>Tech:</b> HTML, CSS</p>
+          <a href="#" class="btn small">Live Demo</a>
+          <a href="#" class="btn small outline">GitHub Code</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Poll Pulse</h3>
+        <div class="img"><img src="./assets/image/poll.png" alt=""></div>
+        <div class="pargrap">
+          <p>
+            A secure and scalable polling system with real-time voting insights.
+          </p>
+          <p><b>Tech:</b> Python, HTML, CSS</p>
+          <a href="#" class="btn small">Live Demo</a>
+          <a href="#" class="btn small outline">GitHub Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="section">
+      <h2>GitHub</h2>
+      <p>Find me on GitHub <span>@LaxmiLoni</span></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact">
+      <h2>Contact</h2>
+      <p>Feel free to contact me for collaboration or opportunities.</p>
+
+      <p>📧 <a href="mailto:laxmiloni0@gmail.com">laxmiloni0@gmail.com</a></p>
+      <p>
+        🐙
+        <a href="https://github.com/LaxmiLoni" target="_blank"
+          >GitHub – Laxmi Loni</a
+        >
+      </p>
+      <p>💼 <a href="#" target="_blank">LinkedIn – Laxmi Loni</a></p>
+    </section>
   </body>
 </html>
