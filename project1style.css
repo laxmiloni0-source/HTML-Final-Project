@@ -46,8 +46,12 @@ h1 {
   padding: 10px;
 }
 .song audio {
-  width: 300px;
-  margin: auto 30px;
+  width: 600px;
+  margin: auto 0px;
+  transition-duration: 0.3s;
+}
+.song audio:hover {
+  transform: translateY(-8px);
 }
 h2 {
   text-align: center;
@@ -55,7 +59,7 @@ h2 {
   background: linear-gradient(to right, #5586e8, #e84edb);
   padding: 18px;
   border-radius: 12px;
-  margin: 40px auto 40px;
+  margin: 50px auto 50px;
   width: 60%;
   font-size: 30px;
 }
@@ -77,6 +81,11 @@ h2 {
   display: inline-block;
   margin: auto 230px;
   margin-left: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.image-box video:hover {
+  transform: translateY(-10px);
 }
 .image-box p {
   background: rgba(152, 230, 250, 0.85); /* glass effect */
