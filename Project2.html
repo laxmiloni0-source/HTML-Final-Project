@@ -6,14 +6,17 @@
     <title>Course Registration</title>
     <link rel="stylesheet" href="./project2style.css" />
   </head>
+
   <body>
     <h1>Course Registration Form</h1>
-    <form method="post" action="http://127.0.0.1:5500/CourseResistration.html">
+
+    <form method="post" action="CourseRegistration.html">
       <fieldset>
-        <legend>Persnol Details</legend>
+        <legend>Personal Details</legend>
+
         <table>
           <tr>
-            <td><label for="FN">First Name </label></td>
+            <td><label for="FN">First Name</label></td>
             <td>
               <input
                 type="text"
@@ -24,12 +27,14 @@
               />
             </td>
           </tr>
+
           <tr>
             <td><label for="SN">Surname</label></td>
             <td>
               <input type="text" name="SN" id="SN" placeholder="ex: Loni" />
             </td>
           </tr>
+
           <tr>
             <td><label for="MN">Mobile No</label></td>
             <td>
@@ -41,6 +46,7 @@
               />
             </td>
           </tr>
+
           <tr>
             <td><label for="email">Email</label></td>
             <td>
@@ -52,69 +58,104 @@
               />
             </td>
           </tr>
+
           <tr>
-            <td><label for="">Password</label></td>
-            <td><input type="password" placeholder="min 5 charectars" /></td>
-          </tr>
-          <tr>
-            <td><label for="">Confirm</label></td>
-            <td><input type="password" placeholder="min 5 charectars" /></td>
-          </tr>
-          <tr>
-            <td><label for="">DOB</label></td>
-            <td><input type="date" /></td>
-          </tr>
-          <tr>
-            <td><label for="">Gender </label></td>
+            <td><label for="password">Password</label></td>
             <td>
-              <input type="radio" name="gender" value="Male" /> Male
-              <input type="radio" name="gender" value="Female" />Female
-              <input type="radio" name="gender" value="Other" />Other
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="min 5 characters"
+              />
             </td>
           </tr>
+
           <tr>
-            <td><label for="">Select Country </label></td>
+            <td><label for="confirm">Confirm</label></td>
             <td>
-              <select>
-                <option value="none">select option</option>
+              <input
+                type="password"
+                name="confirm"
+                id="confirm"
+                placeholder="min 5 characters"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Other" /> Other
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="none">Select option</option>
                 <option value="USA">USA</option>
                 <option value="India">India</option>
-                <option value="Rusia">Rusia</option>
+                <option value="Russia">Russia</option>
               </select>
             </td>
           </tr>
+
           <tr>
-            <td><label for="">Upload picture</label></td>
-            <td><input type="file" /></td>
+            <td><label for="photo">Upload picture</label></td>
+            <td><input type="file" name="photo" id="photo" /></td>
           </tr>
         </table>
+
         <button type="reset">Reset</button>
       </fieldset>
 
       <fieldset>
         <legend>Course Details</legend>
+
         <table>
           <tr>
-            <td><label for="">Select Course</label></td>
+            <td><label for="course">Select Course</label></td>
             <td>
-              <select>
+              <select name="course" id="course">
                 <option value="none">Select Options</option>
-                <option value="Python ">Python Full stack</option>
-                <option value="java">Java Full stack</option>
+                <option value="Python">Python Full stack</option>
+                <option value="Java">Java Full stack</option>
                 <option value="MERN">MERN stack</option>
                 <option value="Datascience">Python for Datascience</option>
               </select>
             </td>
           </tr>
+
           <tr>
-            <td><label for="">Delivery mode</label></td>
-            <td><input type="radio" />Online <input type="radio" />offline</td>
+            <td><label>Delivery mode</label></td>
+            <td>
+              <input type="radio" name="mode" value="Online" /> Online
+              <input type="radio" name="mode" value="Offline" /> Offline
+            </td>
           </tr>
+
           <tr>
-            <td><label for="">Comments</label><br /></td>
-            <td><textarea rows="5" cols="40"></textarea></td>
+            <td><label for="comments">Comments</label></td>
+            <td>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="5"
+                cols="40"
+              ></textarea>
+            </td>
           </tr>
         </table>
+
         <button type="submit">Submit</button>
       </fieldset>
     </form>

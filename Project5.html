@@ -3,15 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laxmi Loni | Portfolio</title>
-    <link rel="stylesheet" href="./project5style.css" />
+    <title>Laxmi Loni | Java Full Stack Developer</title>
+    <link rel="stylesheet" href="project5style.css" />
   </head>
+
   <body>
-    <!-- HOME -->
-    <header class="home">
-      <h1>Laxmi Loni</h1>
-      <h2>Full Stack Developer | Web Developer</h2>
-      <p>I build clean and responsive websites.</p>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <h2>Laxmi Loni</h2>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="home" id="home">
+      <h1>Hi, I'm <span>Laxmi Loni</span></h1>
+      <h2 class="role">Java Full Stack Developer | Backend Developer</h2>
+      <p>
+        I build scalable backend systems and modern web applications using Java.
+      </p>
 
       <div class="buttons">
         <a href="#projects" class="btn primary">View Projects</a>
@@ -19,101 +34,106 @@
           >Download Resume</a
         >
       </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="./assets/Laxmiphoto.jpg" alt="Laxmi Loni" />
+        </div>
 
-    <div class="intro">
-  <div class="intro-photo">
-    <img src="./assets/Laxmiphoto.jpg" alt="Laxmi Loni">
-  </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate <b>Java Full Stack Developer</b> with strong
+            skills in Java, JDBC, Servlets, MySQL, HTML, CSS, and JavaScript. I
+            enjoy building scalable applications and solving real-world
+            problems.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <div class="intro-about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate frontend developer with a strong interest in
-      <b>HTML, CSS, and JavaScript</b>.
-      I enjoy creating responsive and user-friendly websites.
-    </p>
-  </div>
-</div>
     <!-- SKILLS -->
-    <section class="section">
-      <h2>My Skills</h2>
+    <section class="section" id="skills">
+      <h2>Skills</h2>
       <div class="skills">
-        <div class="skill">
-          <img src="./assets/image/java.png" width="100" />
-          <p>Java</p>
-        </div>
-        <div class="skill">
-          <img src="./assets/image/mysql.png" width="100" />
-          <p>MySQL</p>
-        </div>
-        <div class="skill">
-          <img src="./assets/image/html.png" width="100" />
-          <p>HTML5</p>
-        </div>
-        <div class="skill">
-          <img src="./assets/image/css.png" width="100" />
-          <p>CSS3</p>
-        </div>
-        <div class="skill">
-          <img src="./assets/image/js.png" width="100" />
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <img src="./assets/image/python.jpg" width="100" />
-          <p>Python</p>
-        </div>
+        <div class="skill">Java</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">JDBC</div>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <h2>Projects</h2>
-
       <div class="projects">
         <div class="card">
-          <h3>Multimedia Project</h3>
-          <div class="img"><img src="./assets/image/multi.png" alt="" ></div>
-          <div class="pargrap">
-          <p>A responsive multimedia project built using HTML and CSS.</p>
-          <p><b>Tech:</b> HTML, CSS</p>
-          <a href="#" class="btn small">Live Demo</a>
-          <a href="#" class="btn small outline">GitHub Code</a>
+          <h3>Poll Pulse</h3>
+          <p>Online polling system with real-time voting and secure backend.</p>
+          <p><b>Tech:</b> Java, JDBC, MySQL</p>
+          <div class="btn-group">
+            <a href="#" class="btn small">Live</a>
+            <a
+              href="https://github.com/laxmiloni0-source/pollpulse_env"
+              class="btn small outline"
+              target="_blank"
+              >GitHub Link</a
+            >
           </div>
         </div>
 
         <div class="card">
-          <h3>Poll Pulse</h3>
-        <div class="img"><img src="./assets/image/poll.png" alt=""></div>
-        <div class="pargrap">
-          <p>
-            A secure and scalable polling system with real-time voting insights.
-          </p>
-          <p><b>Tech:</b> Python, HTML, CSS</p>
-          <a href="#" class="btn small">Live Demo</a>
-          <a href="#" class="btn small outline">GitHub Code</a>
+          <h3>HTML Mini Project</h3>
+          <p>Using HTML and CSS to build mini projects</p>
+          <p><b>Tech:</b> Java, MySQL</p>
+          <div class="btn-group">
+            <a href="#" class="btn small">Live</a>
+            <a
+              href="https://github.com/laxmiloni0-source/HTML-Final-Project"
+              class="btn small outline"
+              target="_blank"
+              >GitHub Link</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- GITHUB -->
+    <!-- EXPERIENCE -->
     <section class="section">
-      <h2>GitHub</h2>
-      <p>Find me on GitHub <span>@LaxmiLoni</span></p>
+      <h2>Experience</h2>
+      <p>
+        Completed Full Stack Development Course with real-world project
+        experience.
+      </p>
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact">
+    <section class="section contact" id="contact">
       <h2>Contact</h2>
-      <p>Feel free to contact me for collaboration or opportunities.</p>
-
-      <p>📧 <a href="mailto:laxmiloni0@gmail.com">laxmiloni0@gmail.com</a></p>
       <p>
-        🐙
-        <a href="https://github.com/LaxmiLoni" target="_blank"
-          >GitHub – Laxmi Loni</a
+        Email: <a href="mailto:laxmiloni0@gmail.com">laxmiloni0@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/laxmiloni0-source" target="_blank"
+          >github.com/LaxmiLoni</a
         >
       </p>
-      <p>💼 <a href="#" target="_blank">LinkedIn – Laxmi Loni</a></p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/laxmi-loni-ba432a334"
+          >LinkedIn.com/Laxmi Loni
+        </a>
+      </p>
     </section>
+
+    <footer>
+      <p>© 2026 Laxmi Loni | All Rights Reserved</p>
+    </footer>
   </body>
 </html>

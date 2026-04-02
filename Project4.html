@@ -4,35 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="project4style.css" />
+    <link rel="stylesheet" href="./project4style.css" />
   </head>
-
   <body>
-    <h1>Login Page</h1>
+    <div class="login-container">
+      <h1>Login</h1>
 
-    <form>
-      <table>
-        <tr>
-          <td><label for="name">Name</label></td>
-          <td><input type="text" id="name" name="name" /></td>
-        </tr>
+      <form class="login-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
 
-        <tr>
-          <td><label for="email">Email</label></td>
-          <td><input type="email" id="email" name="email" /></td>
-        </tr>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
 
-        <tr>
-          <td><label for="password">Password</label></td>
-          <td><input type="password" id="password" name="password" /></td>
-        </tr>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+        </div>
 
-        <tr>
-          <td colspan="2">
-            <button type="submit">Submit</button>
-          </td>
-        </tr>
-      </table>
-    </form>
+        <button type="submit" class="btn primary">Log In</button>
+
+        <a href="Project2.html" class="btn secondary">Create Account</a>
+      </form>
+    </div>
   </body>
 </html>

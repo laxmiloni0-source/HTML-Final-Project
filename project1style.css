@@ -1,97 +1,104 @@
-body {
-  background-image: url(./assets/Loction/Cosmic\ gradient\ with\ sparkling\ stars.png);
-  background-size: cover; /* IMPORTANT */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-h1 {
-  text-align: center;
-  color: white;
-  background: linear-gradient(to right, #6ea15f, #5b8e4e);
-  padding: 18px;
-  border-radius: 20px;
-  margin: 40px auto 40px;
-  width: 60%;
-  font-size: 50px;
-}
-.audio-box {
-  width: 65%;
-  margin: 80px auto;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-.audio-box h2 {
-  padding: 15px;
-  border-radius: 12px;
-  text-align: center;
-  margin: 10px auto 20px;
-  width: 60%;
-  color: #1e3c72;
-  font-size: 40px;
-}
-.song {
-  margin-bottom: 23px;
-  background-color: rgb(10, 10, 10);
-  margin: auto 20px;
-}
-.audio-box h3 {
-  width: 60%;
-  margin: auto 10px;
-  color: #333;
-  font-size: 30px;
-  border-radius: 50px;
-  padding: 10px;
-}
-.song audio {
-  width: 600px;
-  margin: auto 0px;
-  transition-duration: 0.3s;
-}
-.song audio:hover {
-  transform: translateY(-8px);
-}
-h2 {
-  text-align: center;
-  color: white;
-  background: linear-gradient(to right, #5586e8, #e84edb);
-  padding: 18px;
-  border-radius: 12px;
-  margin: 50px auto 50px;
-  width: 60%;
-  font-size: 30px;
-}
-.image-box {
-  width: 65%;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  height: 800px;
-}
-.image-box image {
-  display: inline-block;
-  margin: auto 400px;
-  margin-right: 5px;
+:root {
+  --primary: #00d2ff;
+  --secondary: #928dab;
+  --bg-color: #0f172a;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --text-color: #f8fafc;
 }
 
-.image-box video {
-  display: inline-block;
-  margin: auto 230px;
-  margin-left: 0;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.image-box video:hover {
-  transform: translateY(-10px);
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary);
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
 }
-.image-box p {
-  background: rgba(152, 230, 250, 0.85); /* glass effect */
-  color: #333;
-  padding: 30px 30px;
-  margin: 20px auto 450px;
+
+/* Audio Section Styling */
+.audio-box {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.song {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+audio {
+  filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Modern look for default player */
+  width: 100%;
+}
+
+/* Image and Video Box Styling */
+.image-box {
+  background: var(--card-bg);
   border-radius: 20px;
-  font-size: 20px;
+  padding: 30px;
+  margin: 20px 0 60px 0;
+  width: 90%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-box p {
+  grid-column: span 2;
+  font-weight: normal;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-left: 4px solid var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-box {
+    grid-template-columns: 1fr;
+  }
+  .image-box p {
+    grid-column: span 1;
+  }
 }
